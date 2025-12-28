@@ -1,0 +1,35 @@
+<div class="burger-container">
+
+  <h1 class="page-title">🍔 Burger & Fries</h1>
+
+  @for (section of menu; track section.section) {
+
+    <h2 class="section-title">{{ section.section }}</h2>
+
+    <div class="menu-grid">
+
+      @for (item of section.items; track item.name) {
+
+        <div class="menu-card">
+
+          @if (item.image) {
+            <img [src]="item.image" alt="{{ item.name }}">
+          }
+
+          <h3>{{ item.name }}</h3>
+
+          @if (item.description) {
+            <p class="desc">{{ item.description }}</p>
+          }
+
+          <span class="price">£{{ item.price }}</span>
+
+        </div>
+
+      }
+
+    </div>
+
+  }
+
+</div>

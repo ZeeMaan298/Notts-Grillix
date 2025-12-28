@@ -1,0 +1,98 @@
+.piri-container{
+    width:100%;
+
+  margin: 0;
+  padding: 0;
+}
+.piri-container {
+  background-image: url('/images/notts_pirri_pirri.jpg');
+  background-size: cover;        /* Makes the image fully responsive */
+  background-position: center;   /* Keeps the important part centered */
+  background-repeat: no-repeat;  /* Prevents repeating */
+  background-attachment: fixed;  /* Makes it look premium (optional) */
+ 
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ff4d4d;
+}
+
+.section-title {
+  margin: 30px 0 20px;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #ffcc00;
+}
+
+/* GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.menu-card {
+   background: #a09d6e97;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(255,77,77,.3);
+}
+
+/* IMAGE */
+.menu-card img {
+  width: 100%;
+  max-height: 170px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.menu-card h3 {
+  font-size: 18px;
+  color: #ff6666;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: .85;
+  margin: 10px 0;
+}
+
+/* PRICES */
+.prices span {
+  display: block;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* SIMPLE ITEM */
+.menu-card.simple {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 22px;
+}
+
+.menu-card.simple .price {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 28px;
+  }
+}

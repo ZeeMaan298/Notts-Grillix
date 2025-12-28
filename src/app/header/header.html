@@ -1,0 +1,42 @@
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="/images/logo.png" alt="Notts Grillix Logo" class="logo-img">
+      </a>
+    </div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a routerLink="/" routerLinkActive="active" >Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active">About</a></li>
+     <li class="menu-item" (click)="toggleMenu1()">
+  <a href="javascript:void(0)">Menu</a>
+
+  <ul class="submenu" [class.show]="menuOpen">
+    <li>
+      <a routerLink="/menu/notts-piri-piri" routerLinkActive="active">Notts Piri Piri</a>
+    </li>
+    <li>
+      <a routerLink="/menu/donner-pizza" routerLinkActive="active">Doner Pizza</a>
+    </li>
+    <li>
+      <a routerLink="/menu/burger-fries" routerLinkActive="active">Burgers fries</a>
+    </li>
+  </ul>
+</li>
+
+      <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+    </ul>
+
+    <div class="burger" id="burger" (click)="toggleMenu()"> 
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </nav>
+</header>
+<div class="header-spacer"></div>
+
+
+<!-- <app-header></app-header> -->
+<router-outlet></router-outlet>

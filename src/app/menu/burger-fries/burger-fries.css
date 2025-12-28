@@ -1,0 +1,68 @@
+.burger-container {
+   background-image: url('/images/burger_fries.png');
+  background-size: cover;        /* Makes the image fully responsive */
+  background-position: center;   /* Keeps the important part centered */
+  background-repeat: no-repeat;  /* Prevents repeating */
+  background-attachment: fixed;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+.section-title {
+  margin: 30px 0 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #ff6666;
+}
+
+/* GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+/* CARD */
+.menu-card {
+  background: #a09d6e97;
+  border-radius: 14px;
+  padding: 18px;
+  text-align: center;
+  /* border: 2px solid #d62828; */
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+  transition: transform .3s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-6px);
+}
+
+/* IMAGE */
+.menu-card img {
+  width: 100%;
+  max-height: 160px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.menu-card h3 {
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.desc {
+  font-size: 14px;
+  opacity: .85;
+}
+
+.price {
+  display: block;
+  margin-top: 8px;
+  font-weight: bold;
+  color: #00ff99;
+}
