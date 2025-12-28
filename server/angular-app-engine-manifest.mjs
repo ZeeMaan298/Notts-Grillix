@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/Notts-Grillix',
   supportedLocales: {
   "en-US": ""
 },
