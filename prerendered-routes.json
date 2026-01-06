@@ -1,0 +1,13 @@
+{
+  "routes": {
+    "/": {},
+    "/about": {},
+    "/contact": {},
+    "/header": {},
+    "/home": {},
+    "/menu": {},
+    "/menu/burger-fries": {},
+    "/menu/donner-pizza": {},
+    "/menu/notts-piri-piri": {}
+  }
+}
