@@ -5,9 +5,11 @@
   padding: 0;
 }
 .piri-container {
-  background-image: url('/images/notts_pirri_pirri.jpg');
-  background-size: cover;        /* Makes the image fully responsive */
-  background-position: center;   /* Keeps the important part centered */
+  background-image: url('/images/pipi.png');
+   height: 100vh;                 /* full screen height */
+  width: 100%;
+  background-size:cover;        /* Makes the image fully responsive */
+  background-position:center;   /* Keeps the important part centered */
   background-repeat: no-repeat;  /* Prevents repeating */
   background-attachment: fixed;  /* Makes it look premium (optional) */
  

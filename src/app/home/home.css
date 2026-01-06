@@ -303,7 +303,17 @@ footer {
     font-size: 16px;
   }
 }
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 36px;
+    padding: 0 10px;
+  }
 
+  .hero-buttons a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 @keyframes fadeUp {
   to {
     opacity: 1;
