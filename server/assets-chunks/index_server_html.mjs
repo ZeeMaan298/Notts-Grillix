@@ -3,7 +3,7 @@ export default `<!doctype html>
 <head>
   <meta charset="utf-8">
   <title>NottsGrillix</title>
-  <base href="https://nottsgrillixkebabs.co.uk/">
+  <base href="/Notts-Grillix/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-2ATS7KEB.css"></head>

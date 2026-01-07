@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'https://nottsgrillixkebabs.co.uk',
+  basePath: '/Notts-Grillix',
   supportedLocales: {
   "en-US": ""
 },
