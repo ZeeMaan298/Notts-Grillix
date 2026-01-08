@@ -2,68 +2,68 @@
 export default {
   bootstrap: () => import('./main.server.mjs').then(m => m.default),
   inlineCriticalCss: true,
-  baseHref: '/Notts-Grillix/',
+  baseHref: '/',
   locale: undefined,
   routes: [
   {
     "renderMode": 2,
-    "route": "/Notts-Grillix"
+    "route": "/"
   },
   {
     "renderMode": 2,
-    "route": "/Notts-Grillix/home"
+    "route": "/home"
   },
   {
     "renderMode": 2,
-    "route": "/Notts-Grillix/header"
+    "route": "/header"
   },
   {
     "renderMode": 2,
-    "route": "/Notts-Grillix/contact"
+    "route": "/contact"
   },
   {
     "renderMode": 2,
-    "route": "/Notts-Grillix/about"
+    "route": "/about"
   },
   {
     "renderMode": 2,
-    "redirectTo": "/Notts-Grillix/menu/donner-pizza",
-    "route": "/Notts-Grillix/menu"
+    "redirectTo": "/menu/donner-pizza",
+    "route": "/menu"
   },
   {
     "renderMode": 2,
     "preload": [
       "chunk-XEKRKQYK.js"
     ],
-    "route": "/Notts-Grillix/menu/donner-pizza"
+    "route": "/menu/donner-pizza"
   },
   {
     "renderMode": 2,
     "preload": [
       "chunk-H4GRSFC5.js"
     ],
-    "route": "/Notts-Grillix/menu/burger-fries"
+    "route": "/menu/burger-fries"
   },
   {
     "renderMode": 2,
     "preload": [
       "chunk-3ZE65BE4.js"
     ],
-    "route": "/Notts-Grillix/menu/notts-piri-piri"
+    "route": "/menu/notts-piri-piri"
   }
 ],
   entryPointToBrowserMapping: undefined,
   assets: {
-    'index.csr.html': {size: 754, hash: 'b5eaaa5ec605720d1e292dab4572a353ad05a3265107a5fabcfbfbbf8821bbf4', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
-    'index.server.html': {size: 1117, hash: '0a73a1811a9ed9ec9017b656beed35a891624f1ba97a01bb57cc9a9d710828cf', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
-    'menu/burger-fries/index.html': {size: 12936, hash: '44a043e77078fe1240bbb0b411a1dcbfdcbfb2d8ec7f4344c4e0919ec06ef720', text: () => import('./assets-chunks/menu_burger-fries_index_html.mjs').then(m => m.default)},
-    'about/index.html': {size: 10365, hash: '1afaf94faa15c85022e1295a04337a3c8439231c32ea34267d5452213d0a8b56', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
-    'index.html': {size: 14014, hash: '89b9654f4735207de2e430a8e3c6667276bf38394d26000eb8ff81fe13cc3f1c', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
-    'header/index.html': {size: 8186, hash: '0029166e9c82725688f5c42b94063f6b0ac4dfc9f02b3fac6a9aa691ff7f23c3', text: () => import('./assets-chunks/header_index_html.mjs').then(m => m.default)},
-    'home/index.html': {size: 14014, hash: '89b9654f4735207de2e430a8e3c6667276bf38394d26000eb8ff81fe13cc3f1c', text: () => import('./assets-chunks/home_index_html.mjs').then(m => m.default)},
-    'contact/index.html': {size: 10130, hash: 'edd2c23ae5e8b3464f4d405ef1142aed796598b2d520546495f6d1dd05909bd2', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
-    'menu/notts-piri-piri/index.html': {size: 12072, hash: '2541db24eb7d33bc12da32396cb0b2fc670c5123ff1daba1205435f827f2475e', text: () => import('./assets-chunks/menu_notts-piri-piri_index_html.mjs').then(m => m.default)},
-    'menu/donner-pizza/index.html': {size: 16035, hash: 'e6149726d0672c9ae01afe5e9f235dec40ec491469fba1d74579497ae363a1bc', text: () => import('./assets-chunks/menu_donner-pizza_index_html.mjs').then(m => m.default)},
+    'index.csr.html': {size: 740, hash: '5c04fced37af44245b42657b76c927ac2426399e4e0c9f153d8ad02111b68e90', text: () => import('./assets-chunks/index_csr_html.mjs').then(m => m.default)},
+    'index.server.html': {size: 1103, hash: '245ada12a247c540f31320e4be18350121cb0575a88c6dbb4306e718f889f95c', text: () => import('./assets-chunks/index_server_html.mjs').then(m => m.default)},
+    'menu/burger-fries/index.html': {size: 12824, hash: '289a3263f0916d1a595bb3b3d8efc4b813f2a0c9aa9e9b62bc39a862fd09cf5f', text: () => import('./assets-chunks/menu_burger-fries_index_html.mjs').then(m => m.default)},
+    'about/index.html': {size: 10253, hash: 'ce67b5025dde1d6af716624d85c44bc7a7839838d10fccf3452197e3e7ff8f6e', text: () => import('./assets-chunks/about_index_html.mjs').then(m => m.default)},
+    'home/index.html': {size: 13902, hash: '411f671884c1b5916ccd4425718b1e6519408a6854a8a3af13262afda7049960', text: () => import('./assets-chunks/home_index_html.mjs').then(m => m.default)},
+    'header/index.html': {size: 7976, hash: '6f47f6d426da7caa4fd50744446fbcdd39ed29439cfaae002633c6a9687284cd', text: () => import('./assets-chunks/header_index_html.mjs').then(m => m.default)},
+    'index.html': {size: 13902, hash: '411f671884c1b5916ccd4425718b1e6519408a6854a8a3af13262afda7049960', text: () => import('./assets-chunks/index_html.mjs').then(m => m.default)},
+    'contact/index.html': {size: 10018, hash: '098ad8e3d2471749bdd8374dacdb7dac760a4eb8a0fdfc6cf6240583b40e33e5', text: () => import('./assets-chunks/contact_index_html.mjs').then(m => m.default)},
+    'menu/notts-piri-piri/index.html': {size: 11960, hash: 'e652acd5341cf1eeee568ee0d336dfb00f833bbb1a141550ae0d21b160bac65d', text: () => import('./assets-chunks/menu_notts-piri-piri_index_html.mjs').then(m => m.default)},
+    'menu/donner-pizza/index.html': {size: 15923, hash: 'a49ac47e46f0eb4aa73cdc9bd3356080102de0ad50be66ab2b6d5614d821fdba', text: () => import('./assets-chunks/menu_donner-pizza_index_html.mjs').then(m => m.default)},
     'styles-2ATS7KEB.css': {size: 25, hash: 's97pOsClilc', text: () => import('./assets-chunks/styles-2ATS7KEB_css.mjs').then(m => m.default)}
   },
 };
