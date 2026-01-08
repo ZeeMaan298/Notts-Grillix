@@ -1,13 +1,13 @@
 {
   "routes": {
-    "/": {},
-    "/about": {},
-    "/contact": {},
-    "/header": {},
-    "/home": {},
-    "/menu": {},
-    "/menu/burger-fries": {},
-    "/menu/donner-pizza": {},
-    "/menu/notts-piri-piri": {}
+    "/Notts-Grillix": {},
+    "/Notts-Grillix/about": {},
+    "/Notts-Grillix/contact": {},
+    "/Notts-Grillix/header": {},
+    "/Notts-Grillix/home": {},
+    "/Notts-Grillix/menu": {},
+    "/Notts-Grillix/menu/burger-fries": {},
+    "/Notts-Grillix/menu/donner-pizza": {},
+    "/Notts-Grillix/menu/notts-piri-piri": {}
   }
 }
