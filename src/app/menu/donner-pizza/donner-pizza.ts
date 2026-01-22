@@ -10,31 +10,31 @@ import { NgFor, NgIf } from '@angular/common';
 })
 export class DonnerPizza {
  items = [
-    {
-      name: "Pepperoni Passion",
-      description: "Cheese, pepperoni & tomato",
-      prices: [
-        { size: "7\"", price: 5.50 },
-        { size: "9\"", price: 6.50 },
-        { size: "12\"", price: 7.50 }
-      ]
-    },
-    {
-      name: "Margarita",
-      description: "Cheese & tomato",
-      prices: [
-        { size: "7\"", price: 5.00 },
-        { size: "9\"", price: 6.00 },
-        { size: "12\"", price: 7.50 }
-      ]
-    },
-     {
+  {
+    name: "PEPPERONI PASSION",
+    description: "Double Pepperoni, Double Cheese",
+    prices: [
+      { size: '7"', price: 5.50 },
+      { size: '9"', price: 6.50 },
+      { size: '12"', price: 8.00 }
+    ]
+  },
+  {
+    name: "MARGARITA",
+    description: "Cheese & Tomato",
+    prices: [
+      { size: '7"', price: 5.00 },
+      { size: '9"', price: 6.00 },
+      { size: '12"', price: 8.00 }
+    ]
+  },
+  {
     name: "CHICKEN SPECIAL",
     description: "Tandoori Chicken, Jalapenos, Mushroom, Sweetcorn",
     prices: [
       { size: '7"', price: 5.50 },
       { size: '9"', price: 7.00 },
-      { size: '12"', price: 8.50 }
+      { size: '12"', price: 9.00 }
     ]
   },
   {
@@ -57,16 +57,16 @@ export class DonnerPizza {
   },
   {
     name: "MEAT FEAST",
-    description: "Beef, Turkey Ham, Turkey Bacon, Pepperoni",
+    description: "Beef, Turkey Ham, Turkey Bacon, Pepperoni, Chicken",
     prices: [
       { size: '7"', price: 6.00 },
-      { size: '9"', price: 7.50 },
-      { size: '12"', price: 9.50 }
+      { size: '9"', price: 8.00 },
+      { size: '12"', price: 10.00 }
     ]
   },
   {
     name: "BBQ",
-    description: "BBQ Sauce base, Red Onion, Green Pepper, Chicken",
+    description: "BBQ Sauce Base, Red Onion, Green Pepper, Chicken",
     prices: [
       { size: '7"', price: 5.50 },
       { size: '9"', price: 7.00 },
@@ -86,17 +86,17 @@ export class DonnerPizza {
     name: "NOTTS SPECIAL",
     description: "Mushroom, Red Onion, Green Pepper, Jalapenos, Beef, Pepperoni, Olives",
     prices: [
-      { size: '7"', price: 6.00 },
-      { size: '9"', price: 7.50 },
-      { size: '12"', price: 9.50 }
+      { size: '7"', price: 7.00 },
+      { size: '9"', price: 8.50 },
+      { size: '12"', price: 10.00 }
     ]
   },
   {
     name: "VEGI HOT",
     description: "Jalapenos, Onion, Green Pepper, Mushrooms, Sweetcorn",
     prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 6.50 },
+      { size: '7"', price: 6.00 },
+      { size: '9"', price: 7.00 },
       { size: '12"', price: 8.50 }
     ]
   },
@@ -104,7 +104,7 @@ export class DonnerPizza {
     name: "HOT & SPICY",
     description: "Chilli Base, Chicken Tikka, Jalapenos, Onions, Pepperoni",
     prices: [
-      { size: '7"', price: 5.50 },
+      { size: '7"', price: 6.00 },
       { size: '9"', price: 7.00 },
       { size: '12"', price: 8.50 }
     ]
@@ -135,19 +135,34 @@ export class DonnerPizza {
       { size: '9"', price: 1.00 },
       { size: '12"', price: 1.50 }
     ]
-  }    // I will extract ALL MENU ITEMS from your pictures
-  ];
+  }
+];
 
 
-donners=[
+
+donners = [
   { name: "CHICKEN DONER WITH CHIPS", price: 8.00 },
   { name: "CHICKEN DONER WITH FRESH NAAN", price: 8.00 },
   { name: "CHICKEN DONER WITH CHIPS & CHEESE", price: 9.00 },
   { name: "MEAT DONER WITH CHIPS", price: 8.00 },
   { name: "MEAT DONER WITH FRESH NAAN", price: 8.00 },
-  { name: "MEAT DONER WITH CHIPS & CHEESE", price: 9.00 },
+  { name: "MEAT DONER WITH CHIPS & CHEESE", price: 10.00 },
   { name: "MIX KEBAB WITH CHIPS", price: 9.00 },
-  { name: "MIX KEBAB WITH FRESH NAAN", price: 9.00 }
-  ]
+  { name: "MIX KEBAB WITH FRESH NAAN", price: 9.00 },
+  { name: "CHICKEN DONER WITH RICE", price: 8.00 },
+  { name: "MEAT DONER WITH RICE", price: 8.00 },
+  { name: "DONER MEAT WITH CHEESE & CURRY", price: 10.00 },
+  { name: "DONER MEAT WITH CHEESE & GRAVY", price: 10.00 },
+  { name: "CHICKEN DONER WITH CHEESE & CURRY", price: 10.00 },
+  { name: "CHICKEN DONER WITH CHEESE & GRAVY", price: 10.00 }
+];
+wraps = [
+  { name: "CHICKEN DONER WRAP", price: 5.00 },
+  { name: "MEAT DONER WRAP", price: 5.00 },
+  { name: "MIX DONER WRAP", price: 6.00 },
+  { name: "CHICKEN STRIP WRAP", price: 5.00 },
+  { name: "HALLOUMI WRAP", price: 5.00 }
+];
+
 }
 

@@ -1,3 +1,73 @@
+
+
+.menu-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Main Button */
+.menu-btn {
+  background: #ff3d00;
+  color: #fff;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+ 
+}
+
+/* Dropdown */
+.dropdown-list {
+  position: absolute;
+  top: 110%;              /* pushes dropdown BELOW button */
+  left: 0;
+  background: #1212124c;
+  border-radius: 20px;
+  padding: 10px 0;
+  width: 230px;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+  z-index: 1000;
+}
+
+/* Show class */
+.dropdown-list.show {
+  display: flex;
+}
+
+/* Items */
+.dropdown-list li {
+  list-style: none;
+}
+
+.dropdown-list li a {
+  display: block;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.dropdown-list li a:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* HERO */
 .hero {
 

@@ -19,7 +19,7 @@
     </p>
 
     <p><strong>WhatsApp:</strong><br>
-      <a href="https://wa.me/44746612493" target="_blank">
+      <a href="https://wa.me/447466124939" target="_blank">
         Chat on WhatsApp 💬
       </a>
     </p>
@@ -36,13 +36,15 @@
   <div class="contact-form">
     <h2>Send Us a Message</h2>
 
-    <form>
+    <form #contactForm="ngForm" (ngSubmit)="sendEmail()">
       <input type="text" placeholder="Your Name" required>
       <input type="email" placeholder="Your Email" required>
       <input type="tel" placeholder="Phone Number">
       <textarea rows="5" placeholder="Your Message"></textarea>
 
-      <button type="submit">Send Message</button>
+    <button type="submit" [disabled]="loading">
+  {{ loading ? 'Sending...' : 'Send Message' }}
+</button>
     </form>
   </div>
 

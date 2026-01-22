@@ -1,25 +1,42 @@
-.piri-container{
-    width:100%;
-
+/* ===============================
+   BACKGROUND CONTAINER
+================================ */
+.piri-container {
+  width: 100%;
   margin: 0;
   padding: 0;
-}
-.piri-container {
+  min-height: 100vh;
   background-image: url('/images/pipi.png');
-   height: 100vh;                 /* full screen height */
-  width: 100%;
-  background-size:cover;        /* Makes the image fully responsive */
-  background-position:center;   /* Keeps the important part centered */
-  background-repeat: no-repeat;  /* Prevents repeating */
-  background-attachment: fixed;  /* Makes it look premium (optional) */
- 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
 }
 
+/* DARK OVERLAY */
+.piri-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 0;
+}
+
+/* CONTENT ABOVE OVERLAY */
+.piri-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   TITLES
+================================ */
 .page-title {
   text-align: center;
   font-size: 36px;
   margin-bottom: 40px;
-  color: #ff4d4d;
+  color: #e10600; /* Grill red */
 }
 
 .section-title {
@@ -27,55 +44,86 @@
   text-align: center;
   font-size: 26px;
   text-transform: uppercase;
-  color: #ffcc00;
+  color: #f5c842; /* Gold */
 }
 
-/* GRID */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #e10600, #f5c842);
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+/* ===============================
+   GRID
+================================ */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 25px;
 }
 
-/* CARD */
+/* ===============================
+   MENU CARD (GLASS)
+================================ */
 .menu-card {
-   background: #a09d6e97;
-  border-radius: 14px;
+  background: rgba(20, 20, 20, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 16px;
   padding: 18px;
   text-align: center;
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
-  transition: transform .3s ease, box-shadow .3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 35px rgba(0,0,0,.6);
+  transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 40px rgba(255,77,77,.3);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 22px 55px rgba(225, 6, 0, 0.35);
 }
 
-/* IMAGE */
+/* ===============================
+   IMAGE
+================================ */
 .menu-card img {
   width: 100%;
   max-height: 170px;
   object-fit: contain;
   margin-bottom: 15px;
+  transition: transform 0.4s ease;
 }
 
-/* TEXT */
+.menu-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ===============================
+   TEXT
+================================ */
 .menu-card h3 {
   font-size: 18px;
-  color: #ff6666;
+  color: #ffffff;
 }
 
 .desc {
   font-size: 14px;
-  opacity: .85;
+  font-weight: 600;
+  color: #d6d6d6;
   margin: 10px 0;
 }
 
-/* PRICES */
+/* ===============================
+   PRICES
+================================ */
 .prices span {
   display: block;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f5c842;
   margin-top: 5px;
 }
 
@@ -89,10 +137,12 @@
 
 .menu-card.simple .price {
   font-weight: bold;
-  color: #ffcc00;
+  color: #e10600;
 }
 
-/* MOBILE */
+/* ===============================
+   MOBILE
+================================ */
 @media (max-width: 600px) {
   .page-title {
     font-size: 28px;

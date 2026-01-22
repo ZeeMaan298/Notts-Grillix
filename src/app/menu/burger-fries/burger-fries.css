@@ -1,68 +1,144 @@
+/* ===============================
+   BURGER BACKGROUND
+================================ */
 .burger-container {
-   background-image: url('/images/burger_fries.png');
-  background-size: cover;        /* Makes the image fully responsive */
-  background-position: center;   /* Keeps the important part centered */
-  background-repeat: no-repeat;  /* Prevents repeating */
+  background-image: url('/images/burger_fries.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
+  position: relative;
 }
 
+/* DARK OVERLAY */
+.burger-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.burger-container > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* ===============================
+   TITLES
+================================ */
 .page-title {
   text-align: center;
   font-size: 36px;
+  font-weight: 800;
   margin-bottom: 40px;
-  color: #ffcc00;
+  color: #e10600;
+  text-shadow: 0 0 15px rgba(225,6,0,0.5);
 }
 
 .section-title {
-  margin: 30px 0 20px;
   text-align: center;
   font-size: 24px;
-  color: #ff6666;
+  margin: 30px 0 20px;
+  color: #f5c842;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
-/* GRID */
+/* ===============================
+   GRID
+================================ */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 25px;
 }
 
-/* CARD */
+/* ===============================
+   CARD (NO BORDER / NO BLUR)
+================================ */
 .menu-card {
-  background: #a09d6e97;
-  border-radius: 14px;
+  background: linear-gradient(135deg, #16161669, #2a2a2a);
+  border-radius: 18px;
   padding: 18px;
   text-align: center;
-  /* border: 2px solid #d62828; */
-  box-shadow: 0 10px 30px rgba(0,0,0,.4);
-  transition: transform .3s ease;
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.75),
+    0 0 18px rgba(225,6,0,0.25);
+  transition: transform .35s ease, box-shadow .35s ease;
 }
 
 .menu-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow:
+    0 22px 45px rgba(0,0,0,0.85),
+    0 0 35px rgba(225,6,0,0.55);
 }
 
-/* IMAGE */
+/* ===============================
+   IMAGE
+================================ */
 .menu-card img {
   width: 100%;
   max-height: 160px;
   object-fit: contain;
   margin-bottom: 12px;
+  transition: transform .4s ease;
 }
 
+.menu-card:hover img {
+  transform: scale(1.1);
+}
+
+/* ===============================
+   TEXT
+================================ */
 .menu-card h3 {
-  color: #ffcc00;
   font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
 }
 
 .desc {
   font-size: 14px;
-  opacity: .85;
+  color: #d6d6d6;
+  margin-top: 6px;
 }
 
+/* ===============================
+   PRICE BADGE
+================================ */
 .price {
-  display: block;
-  margin-top: 8px;
-  font-weight: bold;
-  color: #00ff99;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 6px 14px;
+  font-size: 15px;
+  font-weight: 800;
+  color: #000;
+  background: linear-gradient(135deg, #e10600, #f5c842);
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.6);
+}
+
+/* ===============================
+   SCROLL REVEAL
+================================ */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 600px) {
+  .page-title {
+    font-size: 28px;
+  }
 }
