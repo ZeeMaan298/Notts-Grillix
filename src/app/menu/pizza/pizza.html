@@ -1,0 +1,23 @@
+<div class="pizza-container">
+  <h1 class="pizza-title">Pizza Menu 🍕</h1>
+
+  <div class="pizza-grid">
+    <div class="pizza-card" *ngFor="let item of pizzas">
+      
+      <span class="pizza-badge" *ngIf="item.hot">Hot</span>
+
+      <h3>{{ item.name }}</h3>
+
+      <p class="pizza-desc" *ngIf="item.description">
+        {{ item.description }}
+      </p>
+
+      <div class="pizza-prices">
+        <span *ngFor="let p of item.prices">
+          {{ p.size }} — £{{ p.price }}
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>

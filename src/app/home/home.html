@@ -5,10 +5,10 @@
     <p>Fresh • Fast • Full of Flavour</p>
 
     <div class="hero-buttons">
-    <div class="menu-dropdown">
-  <button class="menu-btn" (click)="toggleMenu();  $event.stopPropagation()">
+    <span class="menu-dropdown">
+  <a class="menu-btn" (click)="toggleMenu();  $event.stopPropagation()">
     🍕 View Menu
-  </button>
+  </a>
 
   <ul class="dropdown-list" [class.show]="menuOpen">
     <li><a routerLink="/menu/donner-pizza">🍕 Donner Pizza</a></li>
@@ -16,10 +16,13 @@
     <li><a routerLink="/menu/notts-piri-piri">🔥 Notts Piri Piri</a></li>
     <li><a routerLink="/menu/drink">🧋 Bubble Tea</a></li>
   </ul>
-</div>
+</span>
+<span>
 
+  <a href="https://wa.me/447466124939" class="menu-btn"  target="_blank">💬 WhatsApp Order</a>
+</span>
 
-      <a href="https://wa.me/447466124939" target="_blank">💬 WhatsApp Order</a>
+      
     </div>
   </div>
 </section>

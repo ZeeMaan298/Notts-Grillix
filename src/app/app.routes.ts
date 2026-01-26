@@ -32,6 +32,11 @@ export const routes: Routes = [
           import('./menu/notts-piri-piri/notts-piri-piri').then(m => m.NottsPiriPiri),
       },
       {
+        path: 'Pizza',
+        loadComponent: () =>
+          import('./menu/pizza/pizza').then(m => m.PizzaMenuComponent),
+      },
+      {
         path: 'drink',
         loadComponent: () =>
           import('./menu/drink/drink').then(m => m.Drink),

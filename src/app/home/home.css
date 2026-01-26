@@ -384,6 +384,26 @@ footer {
     font-size: 14px;
   }
 }
+@media (max-width: 330px) {
+  .hero h1 {
+    font-size: 32px;
+    padding: 0 10px;
+  }
+  .menu-btn {
+
+  padding: 12px 24px;
+  
+  font-size: 14px;
+  }
+ 
+.hero-buttons{
+  size: 12px;
+}
+  .hero-buttons a {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
 @keyframes fadeUp {
   to {
     opacity: 1;

@@ -156,6 +156,75 @@
   font-weight: 800;
   color: #ffb703;
 }
+/* ===============================
+   SHISH KEBAB SECTION
+================================ */
+.shishMenu {
+  max-width: 760px;
+  margin: 0 auto 16px auto;
+  padding: 18px 24px;
+  background: linear-gradient(90deg, #160000, #2a0000);
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.8),
+    inset 0 0 12px rgba(225,6,0,0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shishMenu:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow:
+    0 20px 45px rgba(0,0,0,0.9),
+    inset 0 0 18px rgba(255,183,3,0.4);
+}
+
+/* SHISH ITEM NAME */
+.shishMenu .item-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff4f4;
+  text-transform: uppercase;
+}
+
+/* SHISH PRICE */
+.shishMenu .item-price {
+  font-size: 18px;
+  font-weight: 900;
+  color: #ffb703;
+}
+
+/* ===============================
+   EXTRA / ADD-ONS STYLE
+================================ */
+.extraMenu {
+  background: linear-gradient(90deg, #101010, #1f1f1f);
+  border-left: 4px solid #ffb703;
+}
+
+.extraMenu .item-name {
+  color: #ffe6a7;
+}
+
+.extraMenu .item-price {
+  color: #ffb703;
+}
+
+/* ===============================
+   MOBILE TWEAK
+================================ */
+@media (max-width: 600px) {
+  .shishMenu {
+    padding: 14px 18px;
+  }
+
+  .shishMenu .item-name,
+  .shishMenu .item-price {
+    font-size: 16px;
+  }
+}
 
 /* ===============================
    MOBILE

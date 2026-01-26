@@ -1,36 +1,23 @@
-<div class="menu-container" >
-  <h1 class="title">Donner & Pizza Menu 🍕 </h1>
+<div class="menu-container">
 
-  <div class="card-grid" >
+  <h1 class="title">Donner Menu 🌯</h1>
 
-    <div class="menu-card" *ngFor="let item of items">
-      <h3>{{ item.name }}</h3>
-
-      <p class="desc" *ngIf="item.description">
-        {{ item.description }}
-      </p>
-
-      <div class="price-list">
-        <span *ngFor="let p of item.prices">
-          {{ p.size }} — £{{ p.price }}
-        </span>
-      </div>
-    </div>
-
-  </div>
-  <h2 class="title1">Donner Menu 🌯 </h2>
-    <div class="donnerMenu" *ngFor="let item of donners">
+  <div class="donnerMenu" *ngFor="let item of donners">
     <span class="item-name">{{ item.name }}</span>
     <span class="item-price">£{{ item.price.toFixed(2) }}</span>
   </div>
 
+  <h2 class="title1">Wraps 🌯</h2>
 
-<h2 class="title1">Wrap Menu 🌯</h2>
+  <div class="donnerMenu" *ngFor="let item of wraps">
+    <span class="item-name">{{ item.name }}</span>
+    <span class="item-price">£{{ item.price.toFixed(2) }}</span>
+  </div>
+<h2 class="title1">🔥 Fresh Shish Kebabs</h2>
 
-<div class="donnerMenu" *ngFor="let item of wraps">
-  <span class="item-name">{{ item.name }}</span>
-  <span class="item-price">£{{ item.price.toFixed(2) }}</span>
+  <div class="shishMenu" *ngFor="let item of freshShishKebabs">
+    <span class="item-name">{{ item.name }}</span>
+    <span class="item-price">£{{ item.price }}</span>
+  </div>
 </div>
 
-
-</div>

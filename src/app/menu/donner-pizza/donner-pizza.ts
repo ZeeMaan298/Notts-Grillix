@@ -4,139 +4,11 @@ import { NgFor, NgIf } from '@angular/common';
 @Component({
   selector: 'app-donner-pizza',
   standalone: true,
-  imports: [NgFor, NgIf],
+  imports: [NgFor,],
   templateUrl:'./donner-pizza.html',
   styleUrls: ['./donner-pizza.css'],
 })
 export class DonnerPizza {
- items = [
-  {
-    name: "PEPPERONI PASSION",
-    description: "Double Pepperoni, Double Cheese",
-    prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 6.50 },
-      { size: '12"', price: 8.00 }
-    ]
-  },
-  {
-    name: "MARGARITA",
-    description: "Cheese & Tomato",
-    prices: [
-      { size: '7"', price: 5.00 },
-      { size: '9"', price: 6.00 },
-      { size: '12"', price: 8.00 }
-    ]
-  },
-  {
-    name: "CHICKEN SPECIAL",
-    description: "Tandoori Chicken, Jalapenos, Mushroom, Sweetcorn",
-    prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 7.00 },
-      { size: '12"', price: 9.00 }
-    ]
-  },
-  {
-    name: "HAWAIIAN",
-    description: "Turkey Ham & Pineapple",
-    prices: [
-      { size: '7"', price: 5.00 },
-      { size: '9"', price: 6.50 },
-      { size: '12"', price: 8.00 }
-    ]
-  },
-  {
-    name: "TROPICAL",
-    description: "Mushroom, Turkey Ham & Pineapple",
-    prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 6.50 },
-      { size: '12"', price: 8.00 }
-    ]
-  },
-  {
-    name: "MEAT FEAST",
-    description: "Beef, Turkey Ham, Turkey Bacon, Pepperoni, Chicken",
-    prices: [
-      { size: '7"', price: 6.00 },
-      { size: '9"', price: 8.00 },
-      { size: '12"', price: 10.00 }
-    ]
-  },
-  {
-    name: "BBQ",
-    description: "BBQ Sauce Base, Red Onion, Green Pepper, Chicken",
-    prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 7.00 },
-      { size: '12"', price: 8.50 }
-    ]
-  },
-  {
-    name: "DONNER PIZZA",
-    description: "Donner Kebab, Red Onion, Green Pepper",
-    prices: [
-      { size: '7"', price: 5.50 },
-      { size: '9"', price: 7.00 },
-      { size: '12"', price: 8.50 }
-    ]
-  },
-  {
-    name: "NOTTS SPECIAL",
-    description: "Mushroom, Red Onion, Green Pepper, Jalapenos, Beef, Pepperoni, Olives",
-    prices: [
-      { size: '7"', price: 7.00 },
-      { size: '9"', price: 8.50 },
-      { size: '12"', price: 10.00 }
-    ]
-  },
-  {
-    name: "VEGI HOT",
-    description: "Jalapenos, Onion, Green Pepper, Mushrooms, Sweetcorn",
-    prices: [
-      { size: '7"', price: 6.00 },
-      { size: '9"', price: 7.00 },
-      { size: '12"', price: 8.50 }
-    ]
-  },
-  {
-    name: "HOT & SPICY",
-    description: "Chilli Base, Chicken Tikka, Jalapenos, Onions, Pepperoni",
-    prices: [
-      { size: '7"', price: 6.00 },
-      { size: '9"', price: 7.00 },
-      { size: '12"', price: 8.50 }
-    ]
-  },
-  {
-    name: "GARLIC BREAD",
-    description: "",
-    prices: [
-      { size: '7"', price: 4.50 },
-      { size: '9"', price: 5.50 },
-      { size: '12"', price: 6.00 }
-    ]
-  },
-  {
-    name: "GARLIC BREAD WITH CHEESE",
-    description: "",
-    prices: [
-      { size: '7"', price: 5.00 },
-      { size: '9"', price: 6.00 },
-      { size: '12"', price: 7.00 }
-    ]
-  },
-  {
-    name: "EXTRA TOPPINGS",
-    description: "",
-    prices: [
-      { size: '7"', price: 0.50 },
-      { size: '9"', price: 1.00 },
-      { size: '12"', price: 1.50 }
-    ]
-  }
-];
 
 
 
@@ -162,6 +34,18 @@ wraps = [
   { name: "MIX DONER WRAP", price: 6.00 },
   { name: "CHICKEN STRIP WRAP", price: 5.00 },
   { name: "HALLOUMI WRAP", price: 5.00 }
+];
+freshShishKebabs = [
+  { name: 'CHICKEN SHISH', price: 4.95 },
+  { name: 'CHICKEN SHISH WITH NAAN', price: 4.95 },
+  { name: 'CHICKEN SHISH WITH RICE', price: 4.95 },
+  { name: 'CHICKEN SHISH WITH WRAP', price: 6.95 },
+
+  { name: 'SEEKH KEBAB WITH FRESH NAAN', price: 5.50 },
+  { name: 'SEEKH KEBAB WITH RICE', price: 5.95 },
+  { name: 'SEEKH KEBAB WITH WRAP', price: 5.50 },
+
+  { name: '1 FRESH SEEKH KEBAB', price: 1.95 }
 ];
 
 }
