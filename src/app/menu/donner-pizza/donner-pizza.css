@@ -37,14 +37,14 @@
   font-size: 36px;
   font-weight: 800;
   letter-spacing: 1px;
-  color: #ffb703;
+  color: #111111;
   text-shadow: 0 0 18px rgba(255,183,3,0.7);
   cursor: pointer;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .title:hover {
-  color: #e10600;
+  color: #f7f3f2;
   transform: scale(1.05);
 }
 
@@ -109,7 +109,7 @@
   text-align: center;
   font-size: 32px;
   font-weight: 800;
-  color: #e10600;
+  color: #0c0c0c;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;

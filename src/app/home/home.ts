@@ -9,7 +9,7 @@ import { HostListener } from '@angular/core';
   styleUrl: './home.css',
 })
 export class Home {
- menuOpen = false;
+ menuOpen = true;
 
 toggleMenu() {
   this.menuOpen = !this.menuOpen;
